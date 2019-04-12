@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://takuto-f.github.io/">
+
+
+<meta name="generator" content="Hugo 0.53" />
+<title>Create a Hugo website on Github Pages</title>
+<link rel="shortcut icon" href="https://takuto-f.github.io/images/favicon.ico" type="">
+<link rel="stylesheet" href="https://takuto-f.github.io/css/style.css">
+<link rel="stylesheet" href="https://takuto-f.github.io/css/highlight.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+
+
+
+<meta property="og:title" content="Create a Hugo website on Github Pages">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://takuto-f.github.io/">
+
+
+
+
+
+<link rel="canonical" href="https://takuto-f.github.io/posts/20190411/">
+
+    </head>
+<body>
+	  <header class="header">
+			<img src="" alt="">
+
+		</header>
+    <nav class="main-nav">
+        <ul>
+    <li class="active"><a href='https://takuto-f.github.io/'>Articles</a></li>
+    <li><a href='/about'>About</a></li>
+    
+</ul>
+
+    </nav>
+    
+    
+    
+    
+    <div id="site-wrapper-centered">
+        <main class="center">
+            
+  <article class="single">
+    <h1>Create a Hugo website on Github Pages</h1>
+    <section class="extras">
+        <span class="tags">
+          <small class="time">April 11, 2019</small>
+          
+        </span>
+    </section>
+    <section class="description">
+      
+    </section>
+    
+    <section id="content" class="body">
+        
+
+<p>I launched this website using Hugo on Github Pages.
+It took me some hours to complete the task.
+I write down what happened during this work.</p>
+
+<h1 id="environment">Environment</h1>
+
+<ul>
+<li>MacBook Pro (Early 2015)
+
+<ul>
+<li>macOS (Mojave Version 10.14.x)</li>
+<li>Xcode (Version 10.1)</li>
+<li>Git (Version 2.17.2 (Apple Git-113))</li>
+<li>Homebrew (Version 2.0.2)</li>
+<li>Go (version go1.11.4 darwin/amd64)</li>
+</ul></li>
+<li>Github account</li>
+</ul>
+
+<h1 id="0-install-homebrew-and-go">0. Install Homebrew and Go</h1>
+
+<p>I installed Homebrew and Go environment for Hugo.</p>
+
+<pre><code>$ /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+$ brew install go
+</code></pre>
+
+<h1 id="1-install-hugo-by-homebrew">1. Install Hugo by Homebrew</h1>
+
+<pre><code>brew install hugo
+</code></pre>
+
+<h1 id="2-make-a-hugo-site">2. Make a Hugo site</h1>
+
+<h2 id="use-a-template-theme">Use a template theme</h2>
+
+<h1 id="3-check-the-website-on-local">3. Check the website on local</h1>
+
+<p>I had a problem that I couldn&rsquo;t start the webserver because the PATHs were not set correctly. We need to set them according to the instruction shown when We install Hugo.</p>
+
+<h1 id="4-register-and-push-the-directory-to-github">4. Register and push the directory to Github</h1>
+
+<p>It was my first time to commit files to my Github account, so I needed to make the SSH key.</p>
+
+<h1 id="questions-on-this-work">Questions on this work</h1>
+
+<ul>
+<li>Should I clone or add submodule my public directory?</li>
+<li>Should I use SSH or HTTPS when I clone a pre-made theme?</li>
+</ul>
+
+<h1 id="future-tasks">Future Tasks</h1>
+
+<ul>
+<li>edit config.toml<br /></li>
+<li>add search function on my website</li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<ul>
+<li><a href="https://dev.to/dgavlock/creating-a-hugo-site-on-github-pages-3cjo">Creating a Hugo site on GitHub Pages - DEV Community 👩‍💻👨‍💻</a></li>
+<li><a href="https://chanmitsu55.github.io/2017/12/25/2017-12-25-create-blog-by-hugo/">HUGOでブログ作成 → GitHub Pagesで公開する手順 · chanmitsu55 blog</a></li>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Quick Start | Hugo</a></li>
+<li><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub | Hugo</a></li>
+</ul>
+
+    </section> 
+    
+    
+     
+  </article>
+  
+
+ 
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </main>
+        <footer id="footer">
+    <p class="small">
+      
+    </p>
+</footer>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://takuto-f.github.io/js/main.js"></script>
+<script src="https://takuto-f.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

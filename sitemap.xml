@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://takuto-f.github.io/posts/20190411/</loc>
+    <lastmod>2019-04-11T15:16:41-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://takuto-f.github.io/posts/20190408/</loc>
     <lastmod>2019-04-08T01:37:03-04:00</lastmod>
   </url>
@@ -19,13 +24,13 @@
   
   <url>
     <loc>https://takuto-f.github.io/posts/</loc>
-    <lastmod>2019-04-08T01:37:03-04:00</lastmod>
+    <lastmod>2019-04-11T15:16:41-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://takuto-f.github.io/</loc>
-    <lastmod>2019-04-08T01:37:03-04:00</lastmod>
+    <lastmod>2019-04-11T15:16:41-04:00</lastmod>
     <priority>0</priority>
   </url>
   
