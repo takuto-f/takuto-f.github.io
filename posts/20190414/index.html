@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://takuto-f.github.io/">
+
+
+<meta name="generator" content="Hugo 0.53" />
+<title>Tried the puzzle which cannot be solved by bottom 10% of engineers</title>
+<link rel="shortcut icon" href="https://takuto-f.github.io/images/favicon.ico" type="">
+<link rel="stylesheet" href="https://takuto-f.github.io/css/style.css">
+<link rel="stylesheet" href="https://takuto-f.github.io/css/highlight.css">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+
+
+
+<meta property="og:title" content="Tried the puzzle which cannot be solved by bottom 10% of engineers">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://takuto-f.github.io/">
+
+
+
+
+
+<link rel="canonical" href="https://takuto-f.github.io/posts/20190414/">
+
+    </head>
+<body>
+	  <header class="header">
+			<img src="" alt="">
+
+		</header>
+    <nav class="main-nav">
+        <ul>
+    <li class="active"><a href='https://takuto-f.github.io/'>Articles</a></li>
+    <li><a href='/about'>About</a></li>
+    
+</ul>
+
+    </nav>
+    
+    
+    
+    
+    <div id="site-wrapper-centered">
+        <main class="center">
+            
+  <article class="single">
+    <h1>Tried the puzzle which cannot be solved by bottom 10% of engineers</h1>
+    <section class="extras">
+        <span class="tags">
+          <small class="time">April 14, 2019</small>
+          
+        </span>
+    </section>
+    <section class="description">
+      
+    </section>
+    
+    <section id="content" class="body">
+        
+
+<p>I tried the puzzle saying that it cannot be solved by bottom 10% of software engineers in Web industry <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">0</a></sup>, created by Jabba (<a href="https://twitter.com/nodenodenode1">@nodenodenode1</a>).
+I record how I solved it as follows.</p>
+
+<h1 id="question">Question</h1>
+
+<p><a href="https://puzzles-engineer.github.io/2016/01/31/Puzzle-1-Please-call-my-A-P-Is.html">https://puzzles-engineer.github.io/2016/01/31/Puzzle-1-Please-call-my-A-P-Is.html</a></p>
+
+<p><img src="img/20190414.png" alt="puzzle" title="Puzzle" /></p>
+
+<h1 id="process-to-solve-it">Process to solve it</h1>
+
+<p>Understanding curl command and HTTP requests was the key to solve this puzzle.</p>
+
+<pre><code>$ curl http://challenge-your-limits.herokuapp.com/call/me  
+{&quot;message&quot;:&quot;Almost! It's not GET. Keep trying.&quot;}  
+$ curl -d &quot;&quot; http://challenge-your-limits.herokuapp.com/call/me  
+{&quot;message&quot;:&quot;Great! Please register as /challenge_users&quot;}  
+$ curl -d &quot;&quot; http://challenge-your-limits.herokuapp.com/challenge_users  
+{&quot;message&quot;:&quot;Validation Error, [:name, \&quot;can't be blank\&quot;]&quot;}  
+$ curl -d &quot;name=Taku&quot; http://challenge-your-limits.herokuapp.com/challenge_users  
+{&quot;message&quot;:&quot;Validation Error, [:email, \&quot;can't be blank\&quot;]&quot;}  
+$ curl -d &quot;name=Taku&amp;email=foo&quot; http://challenge-your-limits.herokuapp.com/challenge_users  
+{&quot;message&quot;:&quot;Thanks! Please access to http://challenge-your-limits.herokuapp.com/foo  from your web browser.&quot;}  
+</code></pre>
+
+<p>I registered my name (Taku) and comment on the link given by the server.</p>
+
+<p><img src="img/20190414.png" alt="winner comment" title="Winner comment" /></p>
+
+<h1 id="references">References</h1>
+
+<p><a href="https://www.baeldung.com/curl-rest">https://www.baeldung.com/curl-rest</a><br />
+<a href="https://curl.haxx.se/docs/manpage.html#-d">https://curl.haxx.se/docs/manpage.html#-d</a></p>
+
+<hr />
+
+<p><a name="1">[1]:</a> Jabba wrote about it on <a href="https://www.jabba.cloud/20151130122814/">his blog post in Japanese</a>. He made it for screening applicants on recruiting activities.</p>
+
+    </section> 
+    
+    
+     
+  </article>
+  
+
+ 
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </main>
+        <footer id="footer">
+    <p class="small">
+      
+    </p>
+</footer>
+    </div>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://takuto-f.github.io/js/main.js"></script>
+<script src="https://takuto-f.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

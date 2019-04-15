@@ -6,10 +6,22 @@
     <description>Recent content on TBD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Apr 2019 15:16:41 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 13:53:50 -0400</lastBuildDate>
     
 	<atom:link href="https://takuto-f.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tried the puzzle which cannot be solved by bottom 10% of engineers</title>
+      <link>https://takuto-f.github.io/posts/20190414/</link>
+      <pubDate>Sun, 14 Apr 2019 13:53:50 -0400</pubDate>
+      
+      <guid>https://takuto-f.github.io/posts/20190414/</guid>
+      <description>I tried the puzzle saying that it cannot be solved by bottom 10% of software engineers in Web industry 0, created by Jabba (@nodenodenode1). I record how I solved it as follows.
+Question https://puzzles-engineer.github.io/2016/01/31/Puzzle-1-Please-call-my-A-P-Is.html
+Process to solve it Understanding curl command and HTTP requests was the key to solve this puzzle.
+$ curl http://challenge-your-limits.herokuapp.com/call/me {&amp;quot;message&amp;quot;:&amp;quot;Almost! It&#39;s not GET. Keep trying.&amp;quot;} $ curl -d &amp;quot;&amp;quot; http://challenge-your-limits.herokuapp.com/call/me {&amp;quot;message&amp;quot;:&amp;quot;Great! Please register as /challenge_users&amp;quot;} $ curl -d &amp;quot;&amp;quot; http://challenge-your-limits.</description>
+    </item>
     
     <item>
       <title>Create a Hugo website on Github Pages</title>
